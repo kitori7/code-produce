@@ -6,7 +6,6 @@
 # 项目功能图
 ![image](img/9.png)
 # 项目演示图
-![image](img/1.png)
 ![image](img/2.png)
 # 技术栈
 |  技术栈   | 
@@ -21,6 +20,9 @@
 |eslint 7.32.0 规范化代码|
 |prettier 2.4.1 美化代码|
 # 应用场景
+## 字段服务
+展示常用的字段类型
+![image](img/1.png)
 ## 导入数据库
 ![image](img/7.png)
 ![image](img/8.png)
@@ -28,7 +30,6 @@
 ## 多语言生成
 ![image](img/4.png)
 选择已经创建的工程和表名，不仅可以生成Java代码，还能生成TYPESCRIPT代码，并通过oss下载出zip覆盖即可
-请求访问端口post请求：ip:8000/coder-server/api/v1/generate/code/{数据源id}/{工程id}/{类型}，其中类型
 ## 数据生成
 请求访问端口post请求：ip:8000/coder-server/api/v1/generate/code/data
 ![image](img/3.png)
