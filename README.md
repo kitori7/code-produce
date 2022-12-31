@@ -1,6 +1,8 @@
 # 研发背景 
 项目的创作主要来源于工作中，在工作中经常遇到数据库的表变成具体的某个类时，需要写大量无意义的代码。生成的好的代码的代码生成器需要找资源破解，框架自带的生成器又无法满足自己的想法<br>
 同时，当需要数据测试，又不想自己构造数据。借鉴了maku-generator和sqlfather，诞生了这款代码生成器。
+# 后端地址
+[https://github.com/zhouzhou98/code-produce](https://github.com/zhouzhou98/code-produce)
 # 项目功能图
 ![image](img/9.png)
 # 项目演示图
