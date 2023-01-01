@@ -539,14 +539,18 @@ export default defineComponent({
       if (multipleSelection.value) {
         const fieldVos = JSON.parse(JSON.stringify(multipleSelection.value));
         const data: any = [{ tableName, comment, datasourceId, fieldVos }];
-        PostTableAdd(data);
+        PostTableAdd(data).then((res) => {
+          ElMessage.success("导入成功");
+        });
       } else {
         ElMessage.warning("请选择需要导入的字段");
       }
     };
     const onSync = (tableName: string) => {
       const data = [tableName];
-      PostSync(currentId.value, data);
+      PostSync(currentId.value, data).then((res) => {
+        ElMessage.success("同步成功");
+      });
     };
     const isImport: Ref<boolean> = ref(false);
     //获取表

@@ -192,6 +192,7 @@ export default defineComponent({
         password: loginData.value.password,
       }).then(
         (res) => {
+          ElMessage.success("登录成功");
           const token = res.data.access_token;
           localStorage.setItem("token", token);
           const reFreshToken = res.data.refresh_token;
@@ -199,7 +200,7 @@ export default defineComponent({
           router.push("/");
         },
         (error) => {
-          console.error(error);
+          ElMessage.warning("登录失败，请稍后再试");
         }
       );
     };
