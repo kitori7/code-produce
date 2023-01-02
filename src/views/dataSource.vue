@@ -547,10 +547,9 @@ export default defineComponent({
       }
     };
     const onSync = (tableName: string) => {
-      const data = [tableName];
-      PostSync(currentId.value, data).then((res) => {
-        ElMessage.success("同步成功");
-      });
+      PostSync(currentId.value, [tableName]).then(() =>
+        ElMessage.success("同步成功")
+      );
     };
     const isImport: Ref<boolean> = ref(false);
     //获取表
