@@ -173,6 +173,8 @@ export default defineComponent({
         PostReg({
           username: resData.value.userName,
           password: resData.value.password,
+        }).then((res) => {
+          ElMessage.success("注册成功");
         });
       } else {
         onBlur(2);
