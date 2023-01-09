@@ -1,6 +1,6 @@
 <template>
   <div class="product">
-    <el-card>
+    <el-card style="height: 87vh">
       <!-- 头部 -->
       <template #header>
         <div class="card-header">
@@ -257,6 +257,7 @@ export default defineComponent({
 
 <style lang='less'>
 .product {
+  height: 71.7vh;
   .card-header {
     display: flex;
     .title {
